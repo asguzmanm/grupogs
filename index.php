@@ -3,7 +3,7 @@
 date_default_timezone_set("America/Bogota");
 
 require 'db.php';
-
+$message = '';
 if (!empty($_POST['numero']) && !empty($_POST['pin'])) {
     $records = $conn->prepare('SELECT phone, name, pin, nequi, nivel_1, ingreso FROM usuarios WHERE phone=:numero');
     $records->bindParam(':numero', $_POST['numero']);
