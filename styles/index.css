@@ -1,0 +1,161 @@
+:root{
+    --colorTextos: #504b4b67;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Nunito';
+    margin-top: 6px;   
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.contenedor{
+    width: 335px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+    margin: 0 auto;    
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;    
+}
+
+input{
+    background: none;
+    color: #C6C6C6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: #5E5D5D;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2193F3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right,#FD5613,#E0379B);
+    /* background: linear-gradient(to right,#f12711,#f5af19); */
+    transition: 0.3s ease width;
+    left:0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    font-family: 'Nunito';
+    background:#4568DC;
+    background: -webkit-linear-gradient(to right,#FD5613,#E0379B);
+    background: linear-gradient(to right,#FD5613,#E0379B);
+    /* background: #f12711;
+    background: -webkit-linear-gradient(to right,#f12711,#f5af19);
+    background: linear-gradient(to right,#f12711,#f5af19); */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+
+.header{
+    background: -webkit-linear-gradient(to right,#202452, #1F5C9C);
+    background: linear-gradient(to right,#202452, #1F5C9C);    
+    align-items: center;    
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;   
+    
+}
+
+.logo-index{
+    width: 175px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .form{
+        width:80%;
+    }    
+}
+
+/* Para Politica*/
+
+
+  .contenedor .info-consignacion-adv {
+    display: grid;
+    align-items: Justify;
+    grid-template-columns: 100%;
+    
+    width: 335px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-left: 20px solid #ffffff;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-family: "Nunito";
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+  }

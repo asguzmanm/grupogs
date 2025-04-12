@@ -1,0 +1,339 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito";
+  margin-top: 6px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.contenedor {
+  width: 375px;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  margin: 0 auto;
+}
+
+/* Diseño del Header */
+
+.header {
+  background: -webkit-linear-gradient(to right, #202452, #1f5c9c);
+  background: linear-gradient(to right, #202452, #1f5c9c);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 1fr;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.avatar {
+  width: 100px;
+  margin: 25px;
+}
+
+.header .textos .hola {
+  font-family: "Nunito";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.header .textos .nombre {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.header .textos .numero {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+/* Diseño de la información */
+
+.informacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.informacion .dias .tudia {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.informacion .dias .dias-numero {
+  font-family: "Nunito";
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.informacion .dias {
+  border-right: 5px solid transparent;
+  border-image: linear-gradient(to bottom, #fd5613 0%, #e0379b 100%) 1;
+}
+
+.informacion .nequi .nequi-titulo {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.informacion .nequi .nequi-numero {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.informacion .nequi .actualizar-nequi {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* Diseño de información referido */
+
+.referido {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15% 1fr;
+}
+
+.img-informacion {
+  width: 20px;
+  margin-left: 25px;
+}
+
+.referido .referi {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* Ganancia */
+
+.ganancia {
+  width: 360px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 10px solid #fd5613;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.ganancia .ganancia-texto {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.ganancia .ganancia-numero {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.message {
+  width: 360px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 10px solid #e0379b;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.message .message-texto {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* Sin Nequi */
+
+.img-consignacion {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.contenedor .info-consignacion {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 26% 74%;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  width: 360px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-left: 10px solid #e0379b;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.grupo {
+  text-align: left;
+}
+
+/* input{
+    font-family: 'Nunito';
+    text-align: center;
+    color: #161616;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;    
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 222, 222);
+} */
+
+.grupo .ingrese {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  font-family: "Nunito";
+  background: -webkit-linear-gradient(to right, #fd5613, #e0379b);
+  background: linear-gradient(to right, #fd5613, #e0379b);
+  border: none;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  color: #ffffff;
+  height: 35px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contenedor .warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #b06ab3;
+  padding-top: 20px;
+}
+
+.grupo .textos .hola {
+  font-family: "Nunito";
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.grupo .textos .nombre {
+  font-family: "Nunito";
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.grupo .textos .numero {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+
+.subirimagen{
+    
+    align-items: center;
+    margin: 20px 25px;
+    text-align: center;
+}
+
+.subir{
+    font-family: 'Nunito';
+    font-size: 12px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+    width: 320px;
+    outline: none;
+    margin-top: 10px;
+}
+
+::-webkit-file-upload-button{
+    font-family: 'Nunito';
+    color: rgb(255, 255, 255);
+    background: #e0379b;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;     
+}
+
+::-webkit-file-upload-button:hover{
+    background:#fd5613;
+}
+
+.pay-made{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 20% 80%;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  width: 360px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-left: 10px solid #008f39;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.pay-made-no{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 20% 80%;
+  box-shadow: 0 0 6px 0 rgba(65, 61, 61, 0.8);
+  width: 360px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  border-left: 10px solid #fd5613;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-family: "Nunito";
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.img-pay-made {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.img-pay-made-time {
+  width: 50px;
+  margin-left: 10px;
+}
