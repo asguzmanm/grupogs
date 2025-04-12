@@ -7,7 +7,11 @@ $password = "NqqYSthpmpryPLx";     // Tu contraseña de base de datos
 $db = "if0_38722473_dbgrupogs";    // El nombre exacto de tu base de datos
 
 try{
-    $conn = new PDO("mysql:host=$host;dbname=$db;",$user,$password);
+    // Intentamos la conexión con el puerto explícitamente
+    $conn = new PDO("mysql:host=$host;port=3306;dbname=$db", $user, $password);
+    // Establecer el modo de error de PDO a excepción
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Conexión exitosa";
 }catch(PDOException $e){
     die("Fallo la conexión: ".$e->getMessage());
 }
