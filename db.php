@@ -12,7 +12,7 @@ try {
     $conn = new PDO("pgsql:host=$host;dbname=$db", $user, $password);
     // Establecer el modo de error de PDO a excepción
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Conexión exitosa";
+    //echo "Conexión exitosa";
 } catch (PDOException $e) {
     die("Fallo la conexión: " . $e->getMessage());
 }
