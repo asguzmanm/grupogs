@@ -1,14 +1,14 @@
 <?php
 date_default_timezone_set("America/Bogota");
-$server="localhost";
-$user="root";
-$pass="";
-$db="inversionesg";
+//$server="localhost";
+//$user="root";
+//$pass="";
+//$db="inversionesg";
 
-// $server="sql102.epizy.com";
-// $user="epiz_31797071";
-// $pass="3pQNZGhT8j67XRG";
-// $db="epiz_31797071_inversionesg";
+$server="sql312.infinityfree.com";
+$user="if0_38722473";
+$pass="NqqYSthpmpryPLx";
+$db="if0_38722473_dbgrupogs";
 
 try{
     $conn = new PDO("mysql:host=$server;dbname=$db;",$user,$pass);
